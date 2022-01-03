@@ -1,0 +1,34 @@
+.Shope{
+    width: 100vw;
+    height: auto;
+    padding: 2% 0 5% 0 !important;
+    background-color: rgb(240,240,240) !important;
+}
+
+@media (min-width: 1400px){
+    .Shope .container,.Shope .container-lg,.Shope .container-md,.Shope .container-sm,.Shope .container-xl,.Shope .container-xxl {
+        max-width: 1460px;
+    }
+}
+
+
+/* header shope ////////////////////////// */
+ .text_header_shope{
+     font-weight: 700;
+     font-size: 23px;
+     font-family: sans-serif;
+ }
+ .text_left_header_shope{
+    font-weight: 400;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(143, 143, 143);
+ }
+ .link_to_home{
+     text-decoration: none;
+     color: inherit;
+ }
+ .link_to_home:hover{
+     color: rgba(0, 0, 0, 0.76);
+ }
+/* end  */

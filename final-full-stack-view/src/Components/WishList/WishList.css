@@ -1,0 +1,99 @@
+.text_header_Wishlist{
+    color: rgb(37, 37, 37);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.WishList{
+    background-color: rgb(240,240,240) !important;
+}
+.box_search_wishlist{
+    width: fit-content;
+}
+.seaarch_box_wishlist{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    width: 220px;
+    height: 40px;
+    padding: 1% 4%;
+    
+}
+.btn_search{
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+.btn_search:hover{
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+/* right wishlist ................... */
+.box_right_wishlist{
+    background-color: white !important;
+    height: fit-content;
+}
+.thumbns_img{
+    width: 100px;
+    height: 100px;
+    border-right: 1px solid rgb(228, 228, 228);
+    /* border-bottom: 1px solid rgb(228, 228, 228); */
+
+    /* border-collapse: collapse; */
+}
+.header_table_wishlist,.tr_table_wish{
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.header_table_wishlist .product_name{
+    font-size: 15px;
+    color: black;
+    font-family: System-ui;
+}
+.tr_table_wish .product_name{
+    font-size: 15px;
+    color: rgb(136, 135, 135);
+    font-family: inherit;
+    position: relative !important;
+}
+.thumbns_img > div{
+    width: 90%;
+    height: 90% ;
+    object-fit: cover !important;
+    background-size: cover !important;
+    cursor: pointer;
+}
+.point_to_productview{
+    cursor: pointer;
+}
+table{
+    border: 1px solid rgb(228, 228, 228);
+}
+.noproduct{
+    /* pointer-events: none; */
+    cursor: not-allowed !important;
+}
+
+.wis_remove{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+.wis_remove:hover{
+    text-decoration: underline;
+}
+/* end  */
+
+.wishlist_here_paginate{
+    width: 50px !important;
+    height: 50px !important;
+    padding: 10px 15px;
+    margin: 3px;
+    outline: none !important;
+    border: none !important;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) ;
+}

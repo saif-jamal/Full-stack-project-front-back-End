@@ -1,0 +1,47 @@
+.Categories{
+    background-color: white;
+    width: 100%;
+    height: auto; 
+    padding: 4% 5%;
+    display: flex;
+    flex-direction: column;   
+    overflow: hidden;
+    position: relative;
+}
+.text_top_category_shop{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: revert;
+    color: rgba(0, 0, 0, 0.877);
+}
+.hr__shop_category{
+    border-top: 1px solid rgb(197, 192, 164);
+    position: relative;
+    width: 115%;
+    left: -7%;
+    top: -20px;
+}
+
+.text_category_list_wishlist{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: rgb(104, 103, 103);
+    text-decoration: none;
+    cursor: pointer;
+}
+.text_category_list:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.fit_content_width{
+    transition: all 0.7s ease-in-out !important;
+    /* height: 50px !important; */
+}
+.icon_category{
+    color: rgba(0, 0, 0, 0.658) !important;
+    font-weight: bolder !important;
+    font-size: 13px !important;
+}
+
+   

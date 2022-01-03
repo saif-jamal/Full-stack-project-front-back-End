@@ -1,0 +1,360 @@
+*{
+    transition: all 0.5s ease-in-out !important;
+    -webkit-transition: all 0.5s ease-in-out !important;
+    -moz-transition: all 0.5s ease-in-out !important;
+    -o-transition: all 0.5s ease-in-out !important;
+}
+
+.about_header{
+    height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    /* filter: blur(7px); */
+    /* background-color: rgb(156, 27, 27); */
+}
+.blur-effect{
+    /* width: 100%;
+    height: 500px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background: rgba(240, 255, 240, 0); */
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+    /* filter: blur(5px); */
+    z-index: -1 !important;
+}
+.effect{
+    z-index: 3 !important;
+}
+.hr___{
+    margin: auto;
+    width: 120px;
+    border-top: 1px solid rgb(30, 226, 135);
+
+}
+.text-width{
+    margin: auto;
+    width: 45% !important;
+}
+@media only screen and (max-width:800px) {
+    .text-width{
+      margin: auto;
+      width: 85% !important;
+      font-size: 16px !important;
+  }
+}
+/* ..................................  */
+.about-section1{
+    height: fit-content;
+    padding-bottom: 1%;
+}
+
+.about-section1 .font-text-about{
+    text-transform: uppercase;
+    font-size: 60px !important;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.about_us{
+    position: relative;
+    top: 13px;
+    font-size: 18px;
+    font-family: 'FontAwesome';
+    color: #998b29;
+}
+
+.font-text-section1{
+    color: #343434;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.hr___section1{
+    position: relative;
+    border-top: 1px solid green;
+    width: 70px;
+}
+.fffont-text p{
+    font-size: 15px;
+    font-family: system-ui;
+}
+@media only screen  and (max-width:492px){
+  .about_us{
+    font-size: 15px !important;
+  }
+  .font-text-section1{
+    font-size: 25px !important;
+  }
+}
+
+@media only screen  and (max-width:444px){
+  .about_us{
+    font-size: 12px !important;
+  }
+  .font-text-section1{
+    font-size: 17px !important;
+    width: 100%;
+    font-weight: 900;
+  }
+}
+/* section2-slider ///////////////////////////////////////*/
+.section2-slider{
+    height: fit-content;
+    padding-bottom: 1% ;
+    overflow-x: hidden;
+}
+.profile-container
+{	
+	border-radius: 15px;
+	margin: 15px;
+	background-color: rgba(27,191,189,9);
+	min-height: 300px;
+	border: 1px solid rgba(27,191,189,9);
+  cursor: pointer;
+}
+.info-user
+{
+	padding: 10px;
+	background-color: #fff;
+}
+.profile-photo
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: block;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+.name-user
+{	
+	text-align: center;
+	margin-top: 15px;
+}
+.name-user .name
+{		
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.name-user .descrip
+{		
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+}
+.bio-user
+{
+	display: none;
+	text-align: center;
+	padding: 5px;
+}
+.bio-user .bio-info
+{
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+} 
+.bio-user .buttons-options
+{
+	padding: 5px;
+} 
+/* hover section */
+
+.profile-container:hover .info-user
+{	
+	background-color: rgba(27,191,189,9);
+	border-radius: 15px;
+	color: #fff;
+}
+.profile-container:hover .profile-photo
+{	
+	display: none;
+}
+.profile-container:hover .bio-user
+{	
+	display: block;
+}
+/* media querys */
+@media (max-width: 1200px) 
+{
+  	.profile-photo
+	{
+		width: 100px;
+		height: 100px;
+	}
+	.profile-container
+	{	
+		min-height: 200px;
+	}
+	.bio-info
+	{
+		display: none;
+	}
+}
+@media (max-width: 575px) 
+{
+	.bio-info
+	{
+		display: block;
+	}
+}
+
+
+
+
+/* about section 3............................... */
+.our-team{
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+.our-team img{
+  width: 100%;
+  height: 100%;
+}
+.our-team .content{
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 45%;
+  transform: perspective(400px) rotateX(-90deg);
+  transform-origin: center top 0;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+.our-team:hover .content,
+.our-team.active .content{
+  opacity: 1;
+  transform: perspective(400px) rotateX(0deg);
+}
+.our-team .content .title{
+  margin: 0 0 10px;
+  display: block;
+  font-size: 25px;
+  font-weight: 600;
+}
+.our-team .content .post{
+  margin: 0 0 25px;
+  display: block;
+  font-size: 15px
+}
+.our-team .social{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.our-team .social li{
+  display: inline-block;
+}
+.our-team .social li a{
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 0;
+  background-color: #F32248;
+  margin-right: 5px;
+  transition: all 0.5s ease 0s;
+  position: relative;
+}
+.our-team .social li a:hover, .our-team.active .social li a{
+  border-radius: 50%;
+  text-decoration: none;
+}
+@media screen and (max-width: 990px){
+  .our-team{
+      margin-bottom: 30px;
+  }
+}
+.about_section3{
+  height: auto;
+  padding-bottom: 3%;
+}
+.about_section3 a{
+  text-decoration: none !important;
+}
+
+
+
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 250px;
+    height: auto;
+  }
+}
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+
+.section3_text{
+  color: #343434;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.section3_header{
+  position: relative !important;
+  margin-top: 36px;
+  top: 17px;
+  color: gray;
+}
+.hr__section3{
+  border-top: 1px solid green;
+  width: 100px !important;
+  margin: auto;
+}
+
+
+/* end  */
+
+
+.img-responsive{
+  width: 100%;
+  height: 400px !important;
+  object-fit: cover !important;
+  background-size: cover !important;
+  background-position: center !important;
+  object-fit: top right;
+}
+
+
+
+
+
+
+
+
+

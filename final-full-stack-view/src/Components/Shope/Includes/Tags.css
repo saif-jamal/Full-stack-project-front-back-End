@@ -1,0 +1,30 @@
+.Tags{
+    background-color: white;
+    width: 100%;
+    height: auto; 
+    padding: 4% 5%;
+    display: flex;
+    flex-direction: column;   
+    overflow: hidden;
+    position: relative;
+}
+.box_tags_shop{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.Tags_name{
+    width:fit-content;
+    height: fit-content;
+    padding: 2% 4%;
+    color: rgb(92, 92, 92);
+    background-color: rgb(240,240,240) ;
+    font-size: 14px;
+    font-weight: 500px;
+    display: inline-block;
+    cursor: pointer;
+}
+.Tags_name:hover{
+    background-color: black;
+    color: white;
+}

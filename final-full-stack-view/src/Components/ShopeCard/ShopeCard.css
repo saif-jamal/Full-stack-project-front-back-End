@@ -1,0 +1,230 @@
+.ShopeCard{
+    background-color: rgb(244, 244, 244) ;
+    padding: 2%;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+}
+.header_card{
+    background-color: #343434;
+    padding: 2% 4%;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.img_shope_card{
+    width: 90px;
+    height: 80px;
+}
+.text_shope_card{
+    color: #343434;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+}
+.text_shope_card:hover{
+    color: rgba(66, 64, 64, 0.699);
+}
+
+.price_card{
+    font-size: 13px;
+    color: rgb(82, 80, 80);
+    font-family:'Raleway', sans-serif;
+}
+.quentity_card_product{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 25px;
+    height: 50px;
+    overflow: hidden;
+    /* padding: 2% ; */
+}
+.quentity_card_product i{
+    padding: 1%;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+} 
+.left_minus{
+    width: 100%;
+    border-right: 1px solid rgb(216, 216, 216);
+}
+.right_plus{
+    width: 100%;
+    border-left: 1px solid rgb(216, 216, 216);
+}
+.quentity_card_product i:hover{
+    background-color: rgb(230, 228, 228);
+}
+
+
+.quentity_card_product span{
+    width: 80px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.box_total_price{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.box_total_price i{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    background-color: transparent;
+    height: fit-content;
+    border-radius: 50%;
+}
+ /* .d_p:hover .delete_product::after{
+    position: absolute;
+    top: -11px;
+    left: -137%;
+    content: '';
+    background-color: rgb(201, 200, 200);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+} */
+.delete_product:hover{
+   transform: scale(2);
+}
+
+
+.hr__shopcard{
+    border-bottom: 1px solid rgb(219, 217, 217);
+}
+
+@media only screen and (max-width:700px){
+    .head_of_shopeCard{
+        display: none;
+    }
+    .img_shope_card{
+        width: 250px;
+        height: 250px;
+    }
+    .text_shope_card{
+        font-size: 18px;
+
+    }
+    .price_card{
+        font-size: 16px;
+        margin-left: 10%;
+    }
+    .price_card:nth-child(1){
+        text-decoration: line-through;
+        color: rgb(161, 160, 160);
+    }
+    .quentity_card_product{
+        justify-content: space-between;
+        margin-left: 50% !important;
+        width: 270px !important;
+        padding: 0 !important;
+    }
+    .right_plus{
+     /* width: 100px; */
+     padding: 0 !important;
+    }
+    .left_minus{
+        padding: 0 !important;
+        /* width: 100px; */
+    }
+    .box_total_price{
+        margin-left: 56%;
+    }
+
+    .box_total_price span{
+        background-color: rgb(150, 150, 150);
+        padding: 4% 10%;
+        width: fit-content;
+        border-radius: 20px;
+        color: white;
+    }
+    .box_total_price i{
+        background-color: red;
+        padding: 4% 7%;
+        border-radius: 7px;
+        color: white;
+        transform: scale(1) !important;
+    }
+
+}
+
+@media only screen and (max-width:472px){
+    .head_of_shopeCard{
+        display: none;
+    }
+    .img_shope_card{
+        width: 320px;
+        height: 320px;
+        margin: auto;
+    }
+    .move_content{
+        margin: auto;
+    }
+
+ 
+  
+
+    .quentity_card_product{
+        margin-left: 15% !important;
+        width: 250px !important;
+    }
+
+    .box_total_price{
+        margin-left: 20%;
+    }
+
+    .box_total_price span{
+        background-color: rgb(150, 150, 150);
+        padding: 4% 10%;
+        width: fit-content;
+        border-radius: 20px;
+        color: white;
+    }
+
+
+}
+
+
+.totalcheckout{
+    background-color: rgb(52,52,52);
+    border-radius: 20px;
+    padding: 1%;
+    color: white;
+}
+.totalcheckout_text{
+    color: rgb(255, 255, 255);
+}
+.totalcheckout_Button{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(9, 143, 98);
+    padding: 1% 3%;
+    color: white;
+}
+.bg-gray{
+    background-color: gray;
+    pointer-events: none;
+}
+
+.cartshophere{
+    width: 50px !important;
+    height: 50px !important;
+    padding: 10px 15px;
+    margin: 3px;
+    outline: none !important;
+    border: none !important;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) !important;
+}

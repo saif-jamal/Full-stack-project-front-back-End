@@ -1,0 +1,211 @@
+
+img:hover{
+    transform: none;
+}
+
+.Profile .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.Profile .profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.Profile .profile-button:hover {
+    background: #682773
+}
+
+.Profile .profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.Profile .profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.Profile .back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.Profile .labels {
+    font-size: 11px
+}
+
+.Profile .add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+.wallpaper_profile{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+.image_profile{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50% !important;
+    top: 70%;
+    left: 5%;
+    border:3px solid rgb(177, 111, 122);
+}
+.box_userimage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50% !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* border:3px solid rgb(177, 111, 122); */
+}
+
+.box_text_profile{
+    position: absolute;
+    top: 81%;
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1%;
+}
+.box_text_profile span{
+    color: rgb(255, 255, 255);
+}
+.logout_profile{
+    width: fit-content;
+}
+.Profile{
+    background-color: rgb(204,204,204) !important;
+}
+#gender{
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 1%;
+}
+.social_profile{
+    margin-top: 11% !important;
+}
+.location_profile{
+    width: inherit;
+    height: 300px;
+}
+.edit_wallpaper_profile{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 7px;
+    padding: 1%;
+    color: white;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+.edit_wallpaper_profile:hover,.edit_user_profile:hover{
+    background-color: rgba(255, 255, 255, 0.904);
+    color: black;
+}
+.edit_user_profile{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 50%;
+    padding: 3%;
+    color: white;
+    bottom: 2%;
+    right: 20%;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width:1399px){
+    .box_text_profile{
+        top: 81%;
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .box_text_profile{
+        left: 40%;
+    }
+    .image_profile{
+        width: 170px;
+        height: 170px;
+        top: 65%;
+        left: 15%;
+        border:3px solid rgb(177, 111, 122);
+    }
+    .social_profile{
+        margin-top: -7% !important;
+    }
+}
+
+@media only screen and (max-width:687px){
+    .box_text_profile{
+        left: 45%;
+    }
+    .box_text_profile span{
+        font-size: 15px !important;
+    }
+    .logout_profile{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:567px){
+    .box_text_profile{
+        left: 40%;
+   
+    }
+    .image_profile{
+        left: 5%;
+        width: 150px;
+        height: 150px;
+    }
+    .box_text_profile span{
+        font-size: 15px !important;
+    }
+    .logout_profile{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:451px){
+    .box_text_profile{
+        top: 105%;
+        left: 20%;
+        /* margin-bottom: 10% !; */
+   
+    }
+    .image_profile{
+        left: 25%;
+        width: 145px;
+        height: 145px;
+        top: 65%;
+    }
+    .box_text_profile span{
+        font-size: 15px !important;
+    }
+    .logout_profile{
+        font-size: 15px;
+    }
+    .content_profile{
+        margin-top: 30% !important;
+    }
+}
+

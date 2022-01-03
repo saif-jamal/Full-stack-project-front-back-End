@@ -1,0 +1,52 @@
+.icon_content_shop{
+  font-size: 18px;
+  color: rgb(184, 182, 182);
+  cursor: pointer;
+}
+#filter_select{
+   border: 1px solid rgb(221, 221, 221);
+   outline: none;
+   font-size: 15px;
+   color: rgba(0, 0, 0, 0.582);
+   padding: 0.4% 1%;
+   cursor: pointer;
+}
+.shope_content img{
+    height: 300px !important;
+}
+.shope_content .box_section2_product{
+    height: fit-content !important;
+    padding-bottom: 2% !important;
+}
+.Shope{
+  overflow: hidden !important;
+}
+.text_section2_product{
+
+}
+.img_section2_home{
+  transition: all 0s ease-in !important;
+}
+.box_all_card_section2 .box{
+  pointer-events: none !important;
+}
+
+.div_box_message p{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.paginat_item_here{
+  width: 50px !important;
+  height: 50px !important;
+  padding: 10px 15px;
+  margin: 3px;
+  outline: none !important;
+  border: none !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) ;
+}
+.pagination_color{
+  background-color: black !important;
+  color: white !important;
+}

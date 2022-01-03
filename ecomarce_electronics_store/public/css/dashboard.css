@@ -1,0 +1,802 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238,238,238) ;
+
+}
+*{
+    transition: all 0.6s ease ;
+}
+/*menu button ////////////////////////////////////////*/
+.menu_button {
+    position: absolute;
+    top: 1%;
+    right: 1% !important;
+    z-index: 2000;
+    display: flex;
+    justify-content: right;
+}
+
+.menu_button .wrapper-menu {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+}
+
+.menu_button .wrapper-menu.open {
+    transform: rotate(-45deg);
+}
+
+.menu_button .line-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+}
+
+.menu_button .line-menu.half {
+    width: 50%;
+}
+
+.menu_button .line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+
+.menu_button .open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+
+.menu_button .line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+.menu_button .open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+
+
+
+
+
+/* dribbble - twitter */
+.dribbble {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+}
+.dribbble img {
+    display: block;
+    height: 28px;
+}
+.twitter {
+    position: fixed;
+    display: block;
+    right: 64px;
+    bottom: 14px;
+}
+.twitter svg {
+    width: 32px;
+    height: 32px;
+}
+.twitter svg path {
+    fill: #1da1f2;
+    stroke: none;
+}
+
+/*end*/
+
+
+
+
+
+
+
+/*dark mode style................................... */
+.darkmode{
+    height: 70px !important;
+}
+
+.darkmode .container{
+    margin: -39px -32px;
+    padding: 50px;
+    width: fit-content;
+}
+
+.darkmode .slider{
+    display: block;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.darkmode .slider input{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.darkmode .s-body{
+    background-color: #173349;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 1000px;
+    position: relative;
+    z-index: 10;
+    transition: background-color .4s ease-out;
+}
+
+.darkmode .s-body .svg{
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    /* background-color: red; */
+    border-radius: 100%;
+    transition: all .4s ease-out;
+}
+
+.darkmode .s-body .svg .sun,.darkmode  .s-body .svg .moon{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .4s ease-out;
+}
+
+.darkmode .s-shadow{
+    background-color: #173349;
+    width: 80%;
+    height: 100%;
+    display: block;
+    border-radius: 1000px;
+    top: 7%;
+    left: 10%;
+    position: absolute;
+    filter: blur(5px);
+    z-index: 5;
+    transition: background-color .4s ease-out;
+}
+
+.darkmode .slider input:checked ~.s-body .svg{
+    left: 55px;
+}
+
+.darkmode .slider input:checked ~.s-body .svg .sun{
+    opacity: 1;
+}
+
+.darkmode .slider input:not(:checked) ~.s-body .svg .moon{
+    opacity: 1;
+}
+
+.darkmode .slider input:checked ~.s-body{
+    background-color: #1682db;
+}
+
+.darkmode .slider input:checked ~.s-shadow{
+    background-color: #1682db;
+}
+
+/*end dark mode style .................................*/
+
+
+
+
+
+/*....dashboard style...................................................... */
+.dashboard{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: rgb(238,238,238) ;
+
+
+}
+.left_side_nav{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 301px !important;/*551px*/
+    height: 100vh !important;
+    background-image: linear-gradient(to top, rgba(53, 53, 55, 0.78),rgba(53,53,55,0.78)),url("https://images.unsplash.com/photo-1517531991679-1e0625207aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+    transition: left 2s ease !important;
+
+}.left_side_nav::-webkit-scrollbar{
+    display: none;
+ }
+.right_side_nav{
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: scroll;
+}.right_side_nav::-webkit-scrollbar{
+    display: none;
+ }
+.search__field{
+    border: none !important;
+    border-bottom: 1px rgb(205,185,170) solid !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    color: rgb(205,185,170);
+
+}
+.hidesidenav{
+    transition: left 2s ease-in-out !important;
+    position: absolute;
+    left: -100%;
+    overflow: visible !important;
+    z-index: 1999;
+}
+.button_show_when_closeasidenav{
+    position: fixed;
+    top: 2%;
+    left: 0% !important;
+    justify-content: left;
+    z-index: 2000;
+}
+/*end.....................................................*/
+
+
+/*main navbar in right side style.......................................... */
+
+/*search field style*/
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.input-search{
+    height: 30px;
+    width: 30px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    background-color: rgba(31, 31, 31, 0.69);
+    padding-right: 40px;
+    color:#fff;
+}
+.input-search::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.btn-search{
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    color: #f8f8f8;
+    background-color:transparent;
+    pointer-events: painted;
+}
+.btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    color: rgb(154, 8, 8);
+}
+.btn-search:focus{
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+     color: #939191;
+    right: 1px;
+}
+.input-search:focus
+{
+    width: 300px;
+    border-radius: 0% !important;
+    background-color: transparent;
+    border-bottom:1px solid rgb(189,118,201);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    color: rgb(112,72,151);
+
+}
+.input-search:focus .btn-search{
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+
+    right: 1px;
+}
+@keyframes youtubeAnim{
+    0%,100%{
+        color:#c9110f;
+    }
+    50%{
+        color:#ff0000;
+    }
+}
+/*end*/
+
+/*notification button*/
+.marginproductarrow{
+    margin-left:33%;
+}
+
+    .notif{
+        position: relative;
+    }
+    .number_of_notif{
+        position: absolute;
+        top: -1%;
+        right: 13%;
+        background-color: rgb(255, 0, 0);
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 13px;
+    }
+
+/*end*/
+
+.main_navitem a i:nth-child(1):hover{
+    transition: all ease-in-out 0.4s;
+ color: #5a5a5a !important;
+}
+.main_navitem a i:nth-child(2):hover{
+    transition: all ease-in-out 0.4s;
+    color: #e5d04f !important;
+}
+.main_navitem a i:nth-child(3):hover{
+    transition: all ease-in-out 0.4s;
+    color: #666565 !important;
+}
+
+ul li{
+    width: fit-content;
+}
+.navbar-brand{
+    color: #7f7f7f !important;
+    font-family: Arial;
+    font-weight: normal;
+}
+/*end main navbar*/
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+*/
+
+/*aside list .......................................................*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.aside_list_font{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.left_side_nav a{
+    list-style-type: none !important;
+    text-decoration: none;
+    padding: 0 !important;
+}
+/*first*/
+.first_line_list{
+    position: relative;
+}
+.first_line_list::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: hsla(0,0%,70.6%,.3);
+}
+
+/*second*/
+.second_line_list{
+    position: relative;
+}
+.div_second{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+.left__{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.left__ img{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+.second_line_list::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: hsla(0,0%,70.6%,.3);
+}
+.rotate_arrow_admin{
+    transition: all 0.3s ease-in-out !important;
+    transform: rotate(-180deg);
+    margin-bottom: 10%;
+}
+.left__Admin{
+    display: flex;
+}
+.font_admin_list{
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 13px;
+}
+.show_box{
+    transition: all 0.5s ease;
+    display: none !important;
+}
+.show__content_oF_admin{
+    display: block !important;
+}
+.second_line_list p{
+    cursor: pointer;
+}
+.left__Admin:hover{
+    background: rgba(154, 154, 154, 0.25);
+}
+
+
+/*third*/
+.div_Third{
+    display: flex;
+    width: calc(100% - 30px);
+    cursor: pointer;
+}
+.div_Third:hover{
+    background-color: rgba(154, 154, 154, 0.25);
+
+}
+.div_Third span{
+    font-size: 27px ;
+}
+.div_Third p{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+}
+
+
+/*fourth*/
+
+
+.div_Fourth{
+    display: flex;
+    width: calc(100% - 30px);
+    cursor: pointer;
+}
+.div_Fourth:hover{
+    background: rgba(154, 154, 154, 0.25);
+}
+.div_Fourth span{
+    font-size: 27px ;
+}
+.div_Fourth p{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+}
+.customestyleListAside{
+    background-color: rgb(76,175,80) !important;
+}
+/*fifth*/
+.show_box2{
+    display: none;
+}
+
+/*six*/
+.margin__list5{
+    margin-left: 28%;
+}
+.show_box3{
+    display: none;
+}
+
+.link__style{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*footer button*/
+.footer_bottom{
+    margin:auto;
+    width: calc(100% - 30px);
+    background-color: rgb(244,67,54);
+
+}
+/*end aside list*/
+
+
+/*Dashboard content ..................................................................*/
+
+/*folowers part*/
+.folowers .card,
+.visitor .card,
+.Revenue .card,
+.selling .card{
+    position: relative;
+    height: 170px;
+    max-height: 210px;
+    border-radius: 8px !important;
+    border: none;
+    box-shadow: 0 0 4px -2px black;
+
+}
+.card__logo{
+    position: absolute;
+    border-radius: 6px;
+    top: -9%;
+    left: 5%;
+    width: 90px;
+    height: 90px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(13,181,202);
+}.card__logo i{
+    font-size: 35px;
+ }
+.card__text{
+       position: absolute;
+       top: 4%;
+       right: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.card__text p:nth-child(1) {
+    font-size: 18px;
+    color: #a5a4a4 !important;
+}.card__text p:nth-child(2) {
+     font-size: 26px;
+    color: rgb(60,72,88) ;
+    font-family: serif;
+    margin-top: -19%
+ }
+.card__footer{
+    position: absolute;
+    top: 80%;
+    bottom: 1%;
+    left: 0;
+    display: flex;
+    color: #a5a4a4 !important;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+/*visitor*/
+.visitor .card__logo{
+    background-color: rgb(222,38,103);
+}
+
+/*Revenue*/
+.Revenue .card__logo{
+    background-color: rgb(77,168,81);
+}
+/*selling*/
+.selling .card__logo{
+    background-color: rgb(252,148,12);
+}
+
+
+
+/*approximation*/
+.approximation .card{
+    height: auto;
+    position: relative;
+    border-radius: 6px;
+    height: fit-content;
+
+}
+.sss{
+    margin-top: -2%;
+}
+.div_header_up {
+    background-color: rgb(223,40,105);
+    width: 90%;
+    height: fit-content;
+    margin: -4% 0 9% 5%;
+    border-radius: 6px;
+}
+.div_footer {
+    display: flex;
+}
+.hr___hr{
+    width: 92%;
+    border: 1px solid #c2c1c1;
+    margin: auto !important;
+}
+
+.line-chart {
+    animation: fadeIn 600ms cubic-bezier(.57,.25,.65,1) 1 forwards;
+    opacity: 0;
+    max-width: 250px;
+    width: 100%;
+
+}
+
+.aspect-ratio {
+    height: 0;
+    padding-bottom: 50%; // 495h / 990w
+}
+.div_header_up2{
+    background-color: rgb(74,165,78);
+    width: 90%;
+    margin: -4% 0 9% 5%;
+    border-radius: 6px;
+
+}
+.div_header_up3{
+    background-color: rgb(15,183,203);
+    width: 90%;
+    margin: -4% 0 9% 5%;
+    border-radius: 6px;
+
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*employee status....................................*/
+
+.employee__status{
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+}
+.employee__status .card__top {
+    position: absolute;
+    background-color: rgb(252,147,9);
+    color: white;
+    width: 289px;
+    height: 104px;
+    top: -15%;
+    left: 7%;
+    border-radius: 3px;
+}
+.employee__status .card__top p:nth-child(1){
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.employee__status .card__top p:nth-child(2) {
+    font-size: 13px;
+    margin-top: -6%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.img_admin{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+/*user_activ.............................*/
+
+
+/*end*/
+
+
+/*heart color*/
+ .heartcolor{
+     color: red !important;
+ }
+/*end*/
+
+
+.modeChangeforDarkorLight{
+    background-color: rgb(24,25,26)!important;
+}
+.colorforcard{
+ background-color: rgb(36,37,38) !important;
+}
+.colorforcard>p,
+.colorforcard>span,
+.colorforcard>i{
+    color: whitesmoke !important;
+}
+.text_color{
+    color: rgb(255,255,255) !important;
+}
+
+
+
+/*edit responsive/////////////////////////////////////////////////////////////////*/
+
+/*menu*/
+/*@media only screen and (max-width: 1780px){*/
+/*    .menu_button{*/
+/*        left: 13% ;*/
+/*    }*/
+/*}*/
+/*@media only screen and (max-width: 1510px){*/
+/*    .menu_button{*/
+/*        left: 14% ;*/
+/*    }*/
+/*}*/
+/*@media only screen and (max-width: 1360px){*/
+/*    .menu_button{*/
+/*        left: 15% ;*/
+/*    }*/
+/*}*/
+@media only screen and (max-width: 1240px){
+    /*.menu_button{*/
+    /*    left: 17% ;*/
+    /*}*/
+    .left_side_nav{
+        width: 350px !important;
+    }
+}
+@media only screen and (max-width: 810px){
+    /*.menu_button{*/
+    /*    left: 17% ;*/
+    /*}*/
+    .left_side_nav{
+        position: absolute;
+        width: 50% !important;
+        z-index: 1000;
+    }
+}
+/*@media only screen and (max-width: 600px){*/
+/*    .menu_button{*/
+/*        left: 30% ;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+.table_scrool{
+    overflow-x: scroll !important;
+}
+
+
+
+
+
+
+
+
